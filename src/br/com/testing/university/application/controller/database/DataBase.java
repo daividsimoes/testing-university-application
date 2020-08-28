@@ -1,4 +1,4 @@
-package br.com.testing.university.application.controler.database;
+package br.com.testing.university.application.controller.database;
 
 import java.util.ArrayList;
 import java.util.List;

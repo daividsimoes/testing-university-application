@@ -1,4 +1,4 @@
-package br.com.testing.university.application.controler.database;
+package br.com.testing.university.application.controller.database;
 
 /**
  * Simulate a Data Base Factory
