@@ -1,0 +1,54 @@
+div.form {
+	text-align: center;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+}
+.border-style-none {
+	border-style: none;
+}
+
+.login-form {
+	display: inline-block;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.avatar {
+	width: 30%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+}

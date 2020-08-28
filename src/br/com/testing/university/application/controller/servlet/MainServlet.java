@@ -37,7 +37,7 @@ public class MainServlet extends HttpServlet {
 		
 		if(typeAndAddress[0].equals("forward")) {
 			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher(typeAndAddress[1]);
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/views/".concat(typeAndAddress[1]));
 			requestDispatcher.forward(request, response);
 		} else {
 			response.sendRedirect(typeAndAddress[1]);

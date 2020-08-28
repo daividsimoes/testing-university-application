@@ -1,0 +1,87 @@
+button {
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.large-btn {
+	padding: 14px 20px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.green-backgroud-btn {
+	background-color: #4CAF50;
+}
+
+.red-backgroud-btn {
+	background-color: #f44336;
+}
+
+.black-letter-btn {
+	color: black;
+}
+
+@media screen and (max-width: 300px) {
+	.create-account-btn {
+		width: 100%;
+	}
+}
+
+.add-btn {
+	color: white;
+	float: right;
+	margin: 24px;
+	border: 3px solid #F1F1F1;
+}
+
+.logout {
+	position: fixed;
+	right: 24px;
+	top: 10px;
+}
+
+.edit-info-btn {
+	color: white;
+	padding: 14px 20px;
+	margin: 15px 0;
+}
+
+.go-back {
+	position: fixed;
+	left: 24px;
+	top: 10px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 15px 0;
+	border-radius: 4px;
+}
+
+.float-right {
+	float: right;
+}
+
+.margin-left-10px {
+	margin-left: 10px;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
