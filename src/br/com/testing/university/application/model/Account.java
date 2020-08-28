@@ -2,16 +2,17 @@ package br.com.testing.university.application.model;
 
 /**
  * The class represents an user account entity
+ * 
  * @author Daivid
  * 
  */
 public class Account {
-	
+
 	private String username;
 	private String password;
-	
+
 	public Account(String username, String password) {
-		
+
 		this.username = username;
 		this.password = password;
 	}
@@ -31,25 +32,25 @@ public class Account {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
-		
-		if(this == obj) {
+
+		if (this == obj) {
 			return true;
 		}
-		
-		if(obj == null || getClass() != obj.getClass()) {
+
+		if (obj == null || getClass() != obj.getClass()) {
 			return false;
 		}
-		
-		Account account = (Account)obj;
+
+		Account account = (Account) obj;
 		return (username.equals(account.username) && password.equals(account.password));
 	}
-	
+
 	@Override
 	public int hashCode() {
-			
+
 		return username.concat(password).hashCode();
 	}
 }

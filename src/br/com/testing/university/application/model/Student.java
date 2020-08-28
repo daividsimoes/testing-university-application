@@ -4,6 +4,7 @@ import br.com.testing.university.application.enums.Gender;
 
 /**
  * The class represents a student entity
+ * 
  * @author Daivid
  *
  */
@@ -14,9 +15,9 @@ public class Student {
 	private Gender gender;
 	private String email;
 	private int registrationNumber;
-	
+
 	public Student(String name, int age, Gender gender) {
-		
+
 		this.name = name;
 		this.age = age;
 		this.gender = gender;

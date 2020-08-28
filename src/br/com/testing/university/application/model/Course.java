@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * The class represents a course entity
+ * 
  * @author Daivid
  * 
  */
@@ -64,6 +65,7 @@ public class Course {
 
 	/**
 	 * Add new student in the course
+	 * 
 	 * @param student
 	 */
 	public void addStudent(Student student) {
