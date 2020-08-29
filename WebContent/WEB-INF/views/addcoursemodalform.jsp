@@ -17,7 +17,7 @@
 	    			oninput="this.setCustomValidity('')" placeholder="Enter name" required>
 
 				<label for="add-course-max-students">Number of Students</label> 
-				<input type="text" pattern="[1-9]+" id="add-course-max-students" name="couse-max-students" 
+				<input type="text" pattern="[1-9]+" id="add-course-max-students" name="course-max-students" 
 					oninvalid="this.setCustomValidity('Enter a valid number of students')"
 	    			oninput="this.setCustomValidity('')" placeholder="Enter number" required> 
 				

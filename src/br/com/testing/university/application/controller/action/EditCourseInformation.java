@@ -10,21 +10,21 @@ import br.com.testing.university.application.controller.database.DataBase;
 import br.com.testing.university.application.controller.database.DataBaseFactory;
 import br.com.testing.university.application.model.Course;
 
-public class AddCourse implements Actions {
+public class EditCourseInformation implements Actions {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
+		int courseId = Integer.parseInt(request.getParameter("courseId"));
+		
 		String name = request.getParameter("course-name");
-		int courseLoad = Integer.parseInt(request.getParameter("course-load"));
-		int maxStudents = Integer.parseInt(request.getParameter("course-max-students"));
-		
-		Course course = new Course(name, courseLoad, maxStudents);
+		int numStudents = Integer.parseInt(request.getParameter("course-max-students"));
+		int load = Integer.parseInt(request.getParameter("course-load"));
+
 		DataBase dataBase = new DataBaseFactory().getConnection();
+		dataBase.updateCourse(courseId, name, numStudents, load);
 		
-		dataBase.addCourse(course);
-		
-		return "redirect:main?action=CourseList";
+		return "redirect:main?action=CourseInformation&courseId=" + courseId;
 	}
 }
