@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.testing.university.application.controller.database.DataBase;
 import br.com.testing.university.application.controller.database.DataBaseFactory;
-import br.com.testing.university.application.model.Course;
 
 public class EditCourseInformation implements Actions {
 

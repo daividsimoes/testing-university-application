@@ -27,7 +27,7 @@
 					<c:forEach items="${courseList}" var="course">
 						<li>${course.name}
 							<button class="float-right black-letter-btn margin-left-10px" 
-									onclick="location.href='${deleteCourse}&courseId=${course.id}">
+									onclick="location.href='${deleteCourse}&courseId=${course.id}'">
 								<i class="gg-trash tooltip">
 									<span class="tooltiptext">Delete</span>
 								</i>
