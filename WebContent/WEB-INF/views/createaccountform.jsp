@@ -18,7 +18,7 @@
 				<c:url value="/main?action=CreateAccount" var="createAccount" />
 				<form action="${createAccount}" class="container border-style-none" method="post">
 					<label for="add-account-username">Username</label> 
-					<input type="text" pattern="[0-9A-za-z ]+" id="add-account-username" name="add-username" 
+					<input type="text" pattern="[0-9A-za-z. ]+" id="add-account-username" name="add-username" 
 						oninvalid="this.setCustomValidity('Enter a valid username')"
 	    				oninput="this.setCustomValidity('')" placeholder="Enter username" required> 
 					
